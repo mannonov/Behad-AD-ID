@@ -1,6 +1,7 @@
 # Behad-AD-ID
 This library provides AD-ID
 <h3>Gradle implementation</h3>
+in project gradle file
 
             implementation 'com.github.mannonov:Behad-AD-ID:0.0.1'
             
