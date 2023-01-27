@@ -7,7 +7,7 @@ This library provides AD-ID
 <h3>Usage</h3>
 
        BehadADID.getAdId(
-            this,
+            context,
             object : BehadCallBack {
                 override fun onFailure(e: Throwable) {
                     Log.d("ADID", "$e")
