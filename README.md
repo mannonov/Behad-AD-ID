@@ -13,7 +13,7 @@ This library provides AD-ID
                     Log.d("ADID", "$e")
                 }
 
-                override fun onSuccess(string: String?) {
+                override fun onSuccess(adId: String?) {
                     Log.d("ADID", "siuu id $string")
                 }
             }
