@@ -2,6 +2,7 @@ package com.behad.adid
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -12,7 +13,7 @@ class MainActivity : AppCompatActivity() {
             this,
             object : BehadCallBack {
                 override fun onSuccess(string: String?) {
-                    Log.d("mainActBehad", "onSuccess: $string")
+                    findViewById<TextView>(R.id.tv_text).text = string
                 }
 
                 override fun onFailure(e: Throwable) {
