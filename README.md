@@ -12,7 +12,9 @@ in settings.gradle
 
 <h3>Usage</h3>
 
-       BehadADID.getAdId(
+Kotlin:
+
+            BehadADID.getAdId(
             context,
             object : BehadCallBack {
                 override fun onFailure(e: Throwable) {
@@ -24,3 +26,18 @@ in settings.gradle
                 }
             }
         )
+        
+        
+Java:
+
+            BehadADID.INSTANCE.getAdId(this, new BehadCallBack() {
+            @Override
+            public void onSuccess(@Nullable String s) {
+                Log.d("ADID", "onSuccess: " + s);
+            }
+
+            @Override
+            public void onFailure(@NonNull Throwable throwable) {
+                Log.d("ADID", "onFailure: " + throwable);
+            }
+        });
