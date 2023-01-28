@@ -4,7 +4,7 @@ This library provides AD-ID
 
 in project gradle file
 
-            implementation 'com.github.mannonov:Behad-AD-ID:0.0.1'
+            implementation 'com.github.mannonov:Behad-AD-ID:0.0.2'
             
 in settings.gradle
             
