@@ -7,7 +7,7 @@
     <application>
         <provider
             android:name=".AdIDContentProvider"
-            android:authorities="com.behad.adid"
+            android:authorities="${applicationId}.AdIDContentProvider"
             android:enabled="true"
             android:exported="true" />
     </application>
