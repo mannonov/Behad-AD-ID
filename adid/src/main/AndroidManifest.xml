@@ -4,4 +4,12 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="androidx.ads.identifier.provider.HIGH_PRIORITY" />
 
+    <application>
+        <provider
+            android:name=".AdIDContentProvider"
+            android:authorities="com.behad.adid"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
 </manifest>
