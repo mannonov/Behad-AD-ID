@@ -4,7 +4,7 @@ This library provides AD-ID
 
 in project gradle file
 
-            implementation 'com.github.mannonov:Behad-AD-ID:0.0.1'
+            implementation 'com.github.mannonov:Behad-AD-ID:0.0.2'
             
 in settings.gradle
             
@@ -12,7 +12,9 @@ in settings.gradle
 
 <h3>Usage</h3>
 
-       BehadADID.getAdId(
+Kotlin:
+
+            BehadADID.getAdId(
             context,
             object : BehadCallBack {
                 override fun onFailure(e: Throwable) {
@@ -24,3 +26,18 @@ in settings.gradle
                 }
             }
         )
+        
+        
+Java:
+
+            BehadADID.INSTANCE.getAdId(this, new BehadCallBack() {
+            @Override
+            public void onSuccess(@Nullable String s) {
+                Log.d("ADID", "onSuccess: " + s);
+            }
+
+            @Override
+            public void onFailure(@NonNull Throwable throwable) {
+                Log.d("ADID", "onFailure: " + throwable);
+            }
+        });
