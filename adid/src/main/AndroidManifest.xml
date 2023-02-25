@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="androidx.ads.identifier.provider.HIGH_PRIORITY" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="33"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="33"
+        tools:ignore="ScopedStorage" />
 
-    <application>
-        <provider
-            android:name=".AdIDContentProvider"
-            android:authorities="${applicationId}.AdIDContentProvider"
-            android:enabled="true"
-            android:exported="true" />
-    </application>
+    <application android:requestLegacyExternalStorage="true" />
 
 </manifest>

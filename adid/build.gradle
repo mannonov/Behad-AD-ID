@@ -34,7 +34,7 @@ dependencies {
 
     // https://mvnrepository.com/artifact/com.google.android.gms/play-services-ads-identifier
     implementation group: 'com.google.android.gms', name: 'play-services-ads-identifier', version: '18.0.1'
-
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
 
 }
